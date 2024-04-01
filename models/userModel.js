@@ -2,10 +2,15 @@
 const mongoose =require('mongoose');
 //8
 const userSchema = new mongoose.Schema({
-    user_id :Number ,
-    email: String,
-    phone : Number,
-    name : String
+   // user_id :Number,
+   firstName : String,
+   lastName : String,
+  birthdayDate: String,
+  gender:String,
+   emailAddress: String,
+   phoneNumber : Number,
+   password: String
+    
 
 })
 //9

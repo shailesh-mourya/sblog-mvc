@@ -4,19 +4,26 @@ const express = require('express');
 const connectMongo = require('./connection.js');
 //19
 const  uRoutes = require('./routing/userRouting.js');
+//
+var cors = require('cors');
+
 
 
 //2
 const app =express();
+
 //21
 connectMongo();
 
 //3
 app.use(express.json());
 app.use(express.urlencoded({extended:true}));
+app.use(cors());
 
 //20
 app.use(uRoutes);
+//
+
 
 
 //4
