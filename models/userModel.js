@@ -13,6 +13,10 @@ const userSchema = new mongoose.Schema({
     
 
 })
+
+
 //9
 const uModel = mongoose.model('user',userSchema);
+
+
 module.exports = {uModel};

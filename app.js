@@ -4,6 +4,7 @@ const express = require('express');
 const connectMongo = require('./connection.js');
 //19
 const  uRoutes = require('./routing/userRouting.js');
+const  pRoutes = require('./routing/postRouting.js');
 //
 var cors = require('cors');
 
@@ -22,6 +23,7 @@ app.use(cors());
 
 //20
 app.use(uRoutes);
+app.use(pRoutes);
 //
 
 

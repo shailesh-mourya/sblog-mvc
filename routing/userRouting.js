@@ -7,7 +7,7 @@ const  {showUser, addUser, deleteUser} = require("../controllers/userController.
 //15
 const router =express.Router();
 
-//16
+//16 for user
 router.get("/users/showusers",showUser); //to fetch all users
 
 router.post("/users/addusers",addUser); //to add new user
