@@ -8,6 +8,12 @@ const showPost = async (req,res)=>{
  res.json(result);
 }
 
+const showTitlePost = async (req, res) => {
+    const { title } = req.params; // Assuming title is passed as a URL parameter
+    const result = await model.pModel.find({ title }); // Fetch posts with matching title
+    res.json(result);
+  }
+
 //fn for add new post
 const addPost = async(req,res)=>{
     let posts=req.body;
@@ -32,4 +38,4 @@ const deletePost = (req,res)=>{
 
 
 //12
-module.exports= {showPost,addPost,deletePost};
+module.exports= {showPost,showTitlePost,addPost,deletePost};
