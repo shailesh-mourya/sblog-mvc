@@ -3,6 +3,7 @@ const mongoose =require('mongoose');
 //for new post
 const postSchema = new mongoose.Schema({
     //
+    blog_id: String,
     title : String,
     date : String,
     description : String,
